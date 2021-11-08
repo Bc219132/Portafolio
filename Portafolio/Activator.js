@@ -34,16 +34,5 @@ window.addEventListener('load', () => {
 	});
 	// fIN_BUSQUEDA ESCRITA (BARRA DE BUSQUEDA)
 
-	// Cierre al presionar el boton (X)
-	document.querySelector('#bt').addEventListener('click', () => {
-		zoo.classList.remove('activo');
-	});
-	//Fin_Cierre al presionar el boton (X)
-
-	// Cierre al presionar en cualquier parte de la pantalla
-	zoo.addEventListener('click', (accion) => {
-		accion.target.id === 'zoo' ? zoo.classList.remove('activo') : '';
-	});
-	//Fin_Cierre al presionar en cualquier parte de la pantalla
 });
 //FIN_FUNCIÓN GRID : PERMITE TENER EL PEQUEÑO DELAY AL CARGAR LA PAGINA 
