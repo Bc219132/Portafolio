@@ -14,43 +14,47 @@
 <body>
 
 	<!--Login y Contraseña-->
-	<div class="contenedor_Login&Contraseña">
+	<main>
 
-		<div class="Fondo_Unico">
-			<div class="Login">
-				<h3>¿Ya poseo una cuenta?</h3>
-				<p>Inicia sesión para entrar en la página</p>
-				<button id="Inicio_Sesión">Ingresar</button>
+		<div class="contenedor_LoginContraseña">
+
+			<div class="Fondo_Unico">
+				<div class="Login">
+					<h3>¿Ya poseo una cuenta?</h3>
+					<p>Inicia sesión para entrar en la página</p>
+					<button id="Inicio_Sesión">Ingresar</button>
+				</div>
+				<div class="Registro">
+					<h3>¿Quiero registrarme?</h3>
+					<p>Completa el registro para iniciar sesión</p>
+					<button id="Inicio_Registro ">Registrarme</button>
+				</div>
 			</div>
-			<div class="Registro">
-				<h3>¿Quiero registrarme?</h3>
-				<p>Completa el registro para iniciar sesión</p>
-				<button id="Inicio_Registro ">Registrarme</button>
+
+			<!--Formualrios-->
+			<div class="Contenedor_IniciarRegistrar">
+				<!--Formualrios inicio de sesión-->
+				<form action="" class="Iniciar_Sesión">
+					<h2>Iniciar sesión</h2>
+					<input type="text" placeholder="Correo Electronico">
+					<input type="password" placeholder="Contraseña">
+					<button>Ingresar</button>
+				</form>
+				<!--Formualrios Registro-->
+				<form action="" class="Iniciar_Registro">
+					<h2>Registrarse</h2>
+					<input type="text" placeholder="Nombre Completo">
+					<input type="text" placeholder="Correo electronico">
+					<input type="text" placeholder="Nombre de Usiario">
+					<input type="password" placeholder="Contraseña">
+					<button>Registrarse</button>
+				</form>
 			</div>
+
 		</div>
 
-		<!--Formualrios-->
-		<div class="Contenedor_Iniciar&Registrar">
-			<!--Formualrios inicio de sesión-->
-			<form action="" class="Iniciar_Sesión">
-				<h2>Iniciar sesión</h2>
-				<input type="text" placeholder="Correo Electronico">
-				<input type="password" placeholder="Contraseña">
-				<button>Ingresar</button>
-			</form>
-			<!--Formualrios Registro-->
-			<form action="" class="Iniciar_Registro">
-				<h2>Registrarse</h2>
-				<input type="text" placeholder="Nombre Completo">
-				<input type="text" placeholder="Correo electronico">
-				<input type="text" placeholder="Nombre de Usiario">
-				<input type="password" placeholder="Contraseña">
-				<button>Registrarse</button>
-			</form>
-		</div>
-
-	</div>
-
+	</main>
+	<script src="Activator.js"></script>
 </body>
 
 <body>

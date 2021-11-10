@@ -1,12 +1,152 @@
-.login_contraseña {
-	margin: 0;
+.contenedor_LoginContraseña {
+	margin: auto;
 	padding: 0;
 	box-sizing: border-box;
-	text-decoration: none;		
+	text-decoration: none;
+	width: 100%;
+	max-width: 800px;
+	position: relative;	
 }
 
+main{
+	width: 100%;
+	padding: 20px;
+	margin: auto;
+	margin-top: 100px;
+}
 
-/* fin */
+.Fondo_Unico{
+	width: 100%;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 128, 255, 0.3);
+}
+
+.Fondo_Unico div{
+	margin: 100px 40px;
+	color: cornsilk;
+	transition: all 500ms;
+}
+
+.Fondo_Unico div p,
+.Fondo_Unico div button{
+	margin-top: 30px;
+}
+
+.Fondo_Unico div h3{
+	font-weight: 400;
+	font-size: 26px;
+}
+
+.Fondo_Unico button{
+	padding: 10px 40px;
+	border:  2px solid #fff;
+	background: transparent;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	color: white;
+	outline: none;
+	transition: all 300ms;
+}
+
+.Fondo_Unico button:hover{
+	background: #fff;
+	color: aqua;
+}
+
+/*Formulario*/
+
+.Contenedor_IniciarRegistrar{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 380px;
+	position: relative;
+	top: -185px;
+	left: 10px;
+}
+
+.Contenedor_IniciarRegistrar form{
+	width: 100%;
+	padding:  80px 20px;
+	background: #fff;
+	position: absolute;
+	border-radius: 20px;
+}
+
+.Contenedor_IniciarRegistrar form h2{
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: cyan;
+}
+
+.Contenedor_IniciarRegistrar form input{
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px;
+	border: none;
+	background: darkgray;
+	font-size: 16px;
+	outline: none;
+}
+
+.Contenedor_IniciarRegistrar form button{
+	padding: 10px 40px;
+	margin-top: 40px;
+	border: none;
+	font-size: 14px;
+	background: #46a246;
+	color: darkturquoise;
+	cursor: pointer;
+	outline: none;
+}
+
+.Iniciar_Sesión{
+	opacity: 1;
+	display: block;
+}
+
+.Iniciar_Registro{
+	display: none;
+}
+
+/*Responsive Design*/
+
+@media screen and (max-width: 850px){
+
+	.main{
+		margin-top: 50px;
+	}
+
+	.Fondo_Unico{
+		max-width: 350px;
+		height: 300px;
+		flex-direction: column;
+		margin: auto;
+	}
+
+	.Fondo_Unico div{
+		margin: 0px;
+		position: absolute;
+	}
+	/*Formuario*/
+
+	.Contenedor_IniciarRegistrar{
+		top: -10px;
+		left: -5px;
+		margin: auto;
+	}
+
+	.Contenedor_IniciarRegistrar form{
+		position: relative;
+	}
+
+}
+
 /* PAGINA Principal */
 * {
 	margin: 0;
@@ -15,8 +155,9 @@
 }
 
 body {
-	background: #f3f3f3;
+	background-image: url(../Portafolio/Photo/90368696-fondo-digital-de-la-pantalla-de-interfaz-de-usuario-de-tecnología-de-alta-tecnología-de-ciencia-ficc.jpg);
 	font-family: 'Open Sans', sans-serif;
+	
 }
 
 a {
