@@ -9,142 +9,162 @@
 }
 
 main{
-	width: 100%;
-	padding: 20px;
-	margin: auto;
-	margin-top: 100px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
 }
 
-.Fondo_Unico{
-	width: 100%;
-	padding: 10px 20px;
-	display: flex;
-	justify-content: center;
-	backdrop-filter: blur(10px);
-	background-color: rgba(0, 128, 255, 0.3);
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
 }
 
-.Fondo_Unico div{
-	margin: 100px 40px;
-	color: cornsilk;
-	transition: all 500ms;
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+
 }
 
-.Fondo_Unico div p,
-.Fondo_Unico div button{
-	margin-top: 30px;
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
 }
 
-.Fondo_Unico div h3{
-	font-weight: 400;
-	font-size: 26px;
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
 }
 
-.Fondo_Unico button{
-	padding: 10px 40px;
-	border:  2px solid #fff;
-	background: transparent;
-	font-size: 14px;
-	font-weight: 600;
-	cursor: pointer;
-	color: white;
-	outline: none;
-	transition: all 300ms;
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
 }
 
-.Fondo_Unico button:hover{
-	background: #fff;
-	color: aqua;
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
 }
 
-/*Formulario*/
-
-.Contenedor_IniciarRegistrar{
-	display: flex;
-	align-items: center;
-	width: 100%;
-	max-width: 380px;
-	position: relative;
-	top: -185px;
-	left: 10px;
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
 }
 
-.Contenedor_IniciarRegistrar form{
-	width: 100%;
-	padding:  80px 20px;
-	background: #fff;
-	position: absolute;
-	border-radius: 20px;
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46A2FD;
 }
 
-.Contenedor_IniciarRegistrar form h2{
-	font-size: 30px;
-	text-align: center;
-	margin-bottom: 20px;
-	color: cyan;
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
 
-.Contenedor_IniciarRegistrar form input{
-	width: 100%;
-	margin-top: 20px;
-	padding: 10px;
-	border: none;
-	background: darkgray;
-	font-size: 16px;
-	outline: none;
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
 }
 
-.Contenedor_IniciarRegistrar form button{
-	padding: 10px 40px;
-	margin-top: 40px;
-	border: none;
-	font-size: 14px;
-	background: #46a246;
-	color: darkturquoise;
-	cursor: pointer;
-	outline: none;
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46A2FD;
 }
 
-.Iniciar_Sesión{
-	opacity: 1;
-	display: block;
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
 }
 
-.Iniciar_Registro{
-	display: none;
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
 }
 
-/*Responsive Design*/
+
+
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
 
 @media screen and (max-width: 850px){
 
-	.main{
-		margin-top: 50px;
-	}
+    main{
+        margin-top: 50px;
+    }
 
-	.Fondo_Unico{
-		max-width: 350px;
-		height: 300px;
-		flex-direction: column;
-		margin: auto;
-	}
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
 
-	.Fondo_Unico div{
-		margin: 0px;
-		position: absolute;
-	}
-	/*Formuario*/
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
 
-	.Contenedor_IniciarRegistrar{
-		top: -10px;
-		left: -5px;
-		margin: auto;
-	}
 
-	.Contenedor_IniciarRegistrar form{
-		position: relative;
-	}
+    /*Formularios*/
 
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
 }
 
 /* PAGINA Principal */

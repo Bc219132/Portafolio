@@ -16,45 +16,43 @@
 	<!--Login y Contraseña-->
 	<main>
 
-		<div class="contenedor_LoginContraseña">
-
-			<div class="Fondo_Unico">
-				<div class="Login">
-					<h3>¿Ya poseo una cuenta?</h3>
+		<div class="contenedor__todo">
+			<div class="caja__trasera">
+				<div class="caja__trasera-login">
+					<h3>¿Ya tienes una cuenta?</h3>
 					<p>Inicia sesión para entrar en la página</p>
-					<button id="Inicio_Sesión">Ingresar</button>
+					<button id="btn__iniciar-sesion">Iniciar Sesión</button>
 				</div>
-				<div class="Registro">
-					<h3>¿Quiero registrarme?</h3>
-					<p>Completa el registro para iniciar sesión</p>
-					<button id="Inicio_Registro ">Registrarme</button>
+				<div class="caja__trasera-register">
+					<h3>¿Aún no tienes una cuenta?</h3>
+					<p>Regístrate para que puedas iniciar sesión</p>
+					<button id="btn__registrarse">Regístrarse</button>
 				</div>
 			</div>
 
-			<!--Formualrios-->
-			<div class="Contenedor_IniciarRegistrar">
-				<!--Formualrios inicio de sesión-->
-				<form action="" class="Iniciar_Sesión">
-					<h2>Iniciar sesión</h2>
+			<!--Formulario de Login y registro-->
+			<div class="contenedor__login-register">
+				<!--Login-->
+				<form action="" class="formulario__login">
+					<h2>Iniciar Sesión</h2>
 					<input type="text" placeholder="Correo Electronico">
 					<input type="password" placeholder="Contraseña">
-					<button>Ingresar</button>
+					<button>Entrar</button>
 				</form>
-				<!--Formualrios Registro-->
-				<form action="" class="Iniciar_Registro">
-					<h2>Registrarse</h2>
-					<input type="text" placeholder="Nombre Completo">
-					<input type="text" placeholder="Correo electronico">
-					<input type="text" placeholder="Nombre de Usiario">
+
+				<!--Register-->
+				<form action="" class="formulario__register">
+					<h2>Regístrarse</h2>
+					<input type="text" placeholder="Nombre completo">
+					<input type="text" placeholder="Correo Electronico">
+					<input type="text" placeholder="Usuario">
 					<input type="password" placeholder="Contraseña">
-					<button>Registrarse</button>
+					<button>Regístrarse</button>
 				</form>
 			</div>
-
 		</div>
-
+		<script src="Movimient.js"></script>
 	</main>
-	<script src="Activator.js"></script>
 </body>
 
 <body>
