@@ -1,0 +1,162 @@
+
+
+/* PAGINA Principal */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../Photo/05326f95f727f327f1935594b7516004.jpg);
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+a {
+	text-decoration: none;
+}
+/* FIN_PAGINA */
+
+/* CONTENEDOR */
+.contenedor {
+	width: 90%;
+	max-width: 800px;
+	margin: auto;
+}
+/* FIN_CONTENEDOR */
+
+/* HEADER */
+header {
+	padding: 40px 0;
+}
+
+header .Presentacion {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+header .Presentacion p {
+	color: #9B9B9B;
+}
+
+header form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+header .buscador {
+	width: 70%;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	padding: 0 20px;
+	border-radius: 100px;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+}
+
+header .atajos {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+header .atajos a {
+	color: #9B9B9B;
+	margin: 10px 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+header .atajos a.activo {
+	color: #000;
+}
+/* FIN_HEADER */
+
+/* Grid */
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas { 
+	opacity: 1;
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 20px;
+	width: 25%;
+	                      				
+}
+
+.grid .item-contenido {
+	position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.grid .item-contenido a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 10px 75px;
+	text-align: center;
+	border-radius: 100px;
+	transition: .3s ease all;
+	width: 25%;
+}
+
+.grid .item-contenido a {
+	font-size: 15px;
+	line-height: 60px;
+}
+
+.grid .item-contenido .POO {background: #91e8eee7;}
+.grid .item-contenido .Calcu {background: #c3d8c7;}
+.grid .item-contenido .Pro {background: #cfcfcf;}
+
+
+.grid .item-contenido:hover a {
+	animation: icono .8s ease;
+}
+/* FIN_Grid */
+
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
+/* FOOTER */
+footer .Fin_pagina {
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #c13584;
+}
+
+footer .Fin_pagina a {color: #000;}
+footer .Fin_pagina a:hover {text-decoration: underline;}
+
+
+@media screen and (max-width:700px) {
+	.grid .item {
+		width: 50%;
+	}
+}
+/* FOOTER */
+
